@@ -1,4 +1,4 @@
-# mgr-skills
+# More Good Reviews — Agent Skills for Claude
 
 [Claude Agent Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) for [More Good Reviews](https://moregoodreviews.com). Each skill pairs with the More Good Reviews MCP server to turn review and reputation data into action.
 
