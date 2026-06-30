@@ -21,3 +21,11 @@ These skills call tools exposed by the More Good Reviews Project API MCP server.
 - **Claude API** — upload via the Skills API (`/v1/skills`).
 
 Each skill is a self-contained directory with a `SKILL.md`; copy or zip the directory, not just the file.
+
+## Customizing
+
+Each skill ships with sensible defaults (lookback windows, rating and reply-coverage targets, list caps). Treat your copy as a starting point — edit the `Configurable inputs` and defaults in any `SKILL.md` to match your business. Your copy is independent: re-copying a skill to get updates will overwrite local edits, so keep notes on what you changed.
+
+## Contributing
+
+Found a gap or have an improvement? Open an issue or pull request — suggestions for new skills and tweaks to existing ones are welcome.
