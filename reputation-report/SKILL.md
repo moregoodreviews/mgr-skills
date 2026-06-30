@@ -17,6 +17,7 @@ The report exists to drive decisions. Numbers are only worth showing when paired
 - The report opens with **Top 3 priorities** before any detail.
 - Recommendations are specific and owner-assignable, and each ties to a concrete More Good Reviews follow-up (reply to specific reviews, run a review-request campaign, brief a location). Avoid generic advice.
 - Quantify impact and urgency where possible (how many reviews, how many stars, which location).
+- Ignore reviews flagged as duplicates (`is_duplicate`); they never count toward any metric, breakdown, or theme.
 
 ## Read-only contract
 
@@ -53,6 +54,8 @@ Rules:
 ## Step 3: Collect data
 
 All list endpoints are paginated. Use the response `pagination` object (`current_page`, `last_page`, `total`). For counts, read `pagination.total` rather than fetching every page; only page through review bodies when you need text for theme analysis.
+
+**Exclude duplicates.** Reviews flagged as duplicates must not count toward any metric, distribution, leaderboard, or theme. The `filter` parameter holds only one value (and has no "not-duplicate" option), so it cannot be combined with `without-replies`. Instead, read each returned review's `is_duplicate` field and drop every review where it is `true` before counting. When a count would otherwise come from `pagination.total`, fetch the rows and subtract flagged duplicates rather than trusting the raw total.
 
 Call these tools, parameterized by the windows from Step 2:
 

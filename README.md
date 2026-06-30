@@ -4,7 +4,11 @@
 
 ## Skills
 
-- **[reputation-report](reputation-report/SKILL.md)** — Generates an action-first reputation health report over a configurable period (weekly, monthly, quarterly, or yearly): review volume and rating trends, location and source breakdowns, reply coverage, outreach health, root-cause diagnosis of negative trends, and prioritized next steps.
+| Skill | Use when | What it does |
+|-------|----------|--------------|
+| [reputation-report](reputation-report/SKILL.md) | Reputation report, review summary, ratings trend, health check | Read-only report over a configurable period (weekly, monthly, quarterly, yearly): review volume, ratings, location and source breakdowns, reply coverage, outreach health, and prioritized next steps |
+| [reputation-actions](reputation-actions/SKILL.md) | What to do, how to improve, what to fix, priorities | Ranked to-do list (not a report, sends nothing): judges signals against the project's own history and recommends the next 7 highest-impact actions |
+| [review-pipeline](review-pipeline/SKILL.md) | Who to ask for reviews, weekly ask list, send review requests | Builds an eligible-customer queue from a segment (default never asked) and schedules requests via the project's templates after confirmation |
 
 ## Requirements
 
